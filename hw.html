@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Add / Sub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        button {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="doAdd()">Add</button>
+    <button onclick="doSub()">Sub</button>
+
+    <p id="addResult">Addition = </p>
+    <p id="subResult">Subtraction = </p>
+
+    <script>
+        // fixed numbers so output is Addition=30 and Subtraction=20
+        const a = 25;
+        const b = 5;
+
+        function doAdd() {
+            const sum = a + b;          // 25 + 5 = 30 [web:24]
+            document.getElementById("addResult").innerText = "Addition = " + sum;
+        }
+
+        function doSub() {
+            const diff = a - b;         // 25 - 5 = 20 [web:24]
+            document.getElementById("subResult").innerText = "Subtraction = " + diff;
+        }
+    </script>
+</body>
+
+</html>
